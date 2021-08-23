@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>com.ocft</groupId>
+		<artifactId>wms-visual</artifactId>
+		<version>3.3.0</version>
+	</parent>
+
+	<artifactId>wms-codegen</artifactId>
+	<packaging>jar</packaging>
+
+	<description>代码生成模块</description>
+
+	<dependencies>
+		<!--接口文档-->
+		<dependency>
+			<groupId>com.ocft</groupId>
+			<artifactId>wms-common-swagger</artifactId>
+			<version>3.3.0</version>
+		</dependency>
+		<!--注册中心客户端-->
+		<dependency>
+			<groupId>com.alibaba.cloud</groupId>
+			<artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
+		</dependency>
+		<!--配置中心客户端-->
+		<dependency>
+			<groupId>com.alibaba.cloud</groupId>
+			<artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
+		</dependency>
+		<!--断路器依赖-->
+		<dependency>
+			<groupId>com.ocft</groupId>
+			<artifactId>wms-common-feign</artifactId>
+			<version>3.3.0</version>
+		</dependency>
+		<!--数据源-->
+		<dependency>
+			<groupId>com.ocft</groupId>
+			<artifactId>wms-common-datasource</artifactId>
+			<version>3.3.0</version>
+		</dependency>
+		<dependency>
+			<groupId>com.ocft</groupId>
+			<artifactId>wms-common-mybatis</artifactId>
+			<version>3.3.0</version>
+		</dependency>
+		<!--common-->
+		<dependency>
+			<groupId>com.ocft</groupId>
+			<artifactId>wms-common-core</artifactId>
+			<version>3.3.0</version>
+		</dependency>
+		<dependency>
+			<groupId>commons-configuration</groupId>
+			<artifactId>commons-configuration</artifactId>
+			<version>${configuration.version}</version>
+		</dependency>
+		<!--日志处理-->
+		<dependency>
+			<groupId>com.ocft</groupId>
+			<artifactId>wms-common-log</artifactId>
+			<version>3.3.0</version>
+		</dependency>
+		<!--安全模块-->
+		<dependency>
+			<groupId>com.ocft</groupId>
+			<artifactId>wms-common-security</artifactId>
+			<version>3.3.0</version>
+		</dependency>
+		<!--代码生成模板引擎-->
+		<dependency>
+			<artifactId>velocity</artifactId>
+			<groupId>org.apache.velocity</groupId>
+			<version>${velocity.version}</version>
+		</dependency>
+		<!--undertow容器-->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-undertow</artifactId>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+			<plugin>
+				<groupId>io.fabric8</groupId>
+				<artifactId>docker-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
+</project>

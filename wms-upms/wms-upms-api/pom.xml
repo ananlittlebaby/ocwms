@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
+		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.ocft</groupId>
+		<artifactId>wms-upms</artifactId>
+		<version>3.3.0</version>
+	</parent>
+
+	<artifactId>wms-upms-api</artifactId>
+	<packaging>jar</packaging>
+
+	<description>pig 通用用户权限管理系统公共api模块</description>
+
+
+	<dependencies>
+		<!--core 工具类-->
+		<dependency>
+			<groupId>com.ocft</groupId>
+			<artifactId>wms-common-core</artifactId>
+			<version>3.3.0</version>
+		</dependency>
+		<!--feign 依赖-->
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-openfeign</artifactId>
+		</dependency>
+		<!--断路器依赖-->
+		<dependency>
+			<groupId>com.ocft</groupId>
+			<artifactId>wms-common-feign</artifactId>
+			<version>3.3.0</version>
+		</dependency>
+		<!--mybatis 依赖-->
+		<dependency>
+			<groupId>com.ocft</groupId>
+			<artifactId>wms-common-mybatis</artifactId>
+			<version>3.3.0</version>
+		</dependency>
+	</dependencies>
+</project>

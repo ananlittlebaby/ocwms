@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
+		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.ocft</groupId>
+		<artifactId>wms</artifactId>
+		<version>3.3.0</version>
+	</parent>
+
+	<artifactId>wms-common</artifactId>
+	<packaging>pom</packaging>
+
+	<description>wms 公共聚合模块</description>
+
+	<modules>
+		<module>wms-common-core</module>
+		<module>wms-common-datasource</module>
+		<module>wms-common-job</module>
+		<module>wms-common-log</module>
+		<module>wms-common-mybatis</module>
+		<module>wms-common-security</module>
+		<module>wms-common-feign</module>
+		<module>wms-common-swagger</module>
+		<module>wms-common-test</module>
+	</modules>
+</project>
